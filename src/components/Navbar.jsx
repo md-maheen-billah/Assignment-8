@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-lg fixed z-10">
+    <div className="navbar bg-base-100  fixed z-10 max-w-[1170px]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,31 +23,85 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="space-y-2 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-36"
           >
             <li>
-              <a>Home</a>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? " bg-[#23be0a] text-white px-2 py-1 rounded-md"
+                    : "px-2 py-1"
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <a>Listed Books</a>
+              <NavLink
+                to="/listed"
+                className={({ isActive }) =>
+                  isActive
+                    ? " bg-[#23be0a] text-white px-2 py-1 rounded-md"
+                    : "px-2 py-1"
+                }
+              >
+                Listed Books
+              </NavLink>
             </li>
             <li>
-              <a>Pages to Read</a>
+              <NavLink
+                to="/pages"
+                className={({ isActive }) =>
+                  isActive
+                    ? " bg-[#23be0a] text-white px-2 py-1 rounded-md"
+                    : "px-2 py-1"
+                }
+              >
+                Pages to Read
+              </NavLink>
             </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl p-0">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li className="text-[#23be0a]">
-            <a>Home</a>
+        <ul className=" menu-horizontal px-1">
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold px-4 btn py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <a>Listed Books</a>
+            <NavLink
+              to="/listed"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold btn px-4 py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+              }
+            >
+              Listed Books
+            </NavLink>
           </li>
           <li>
-            <a>Pages to Read</a>
+            <NavLink
+              to="/pages"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold btn px-4 py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+              }
+            >
+              Pages to Read
+            </NavLink>
           </li>
         </ul>
       </div>

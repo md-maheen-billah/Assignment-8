@@ -1,12 +1,9 @@
-import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
 
 const Home = () => {
   return (
     <div>
-      <div className="h-16">
-        <Navbar></Navbar>
-      </div>
-      <h1>Homepage</h1>
+      <Banner></Banner>
     </div>
   );
 };
