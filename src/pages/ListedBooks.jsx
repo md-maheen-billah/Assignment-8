@@ -18,6 +18,42 @@ const ListedBooks = () => {
     const storedBooks = getWishBooks();
     setBooks2(storedBooks);
   }, []);
+  const handleRatingSort = () => {
+    const sortRead = getBooks();
+    const sortWish = getWishBooks();
+    const newSortWish = sortWish.sort((a, b) => {
+      return b.rating - a.rating;
+    });
+    setBooks2(newSortWish);
+    const newSortRead = sortRead.sort((a, b) => {
+      return b.rating - a.rating;
+    });
+    setBooks(newSortRead);
+  };
+  const handlePagesSort = () => {
+    const sortRead = getBooks();
+    const sortWish = getWishBooks();
+    const newSortWish = sortWish.sort((a, b) => {
+      return b.totalPages - a.totalPages;
+    });
+    setBooks2(newSortWish);
+    const newSortRead = sortRead.sort((a, b) => {
+      return b.totalPages - a.totalPages;
+    });
+    setBooks(newSortRead);
+  };
+  const handleYearSort = () => {
+    const sortRead = getBooks();
+    const sortWish = getWishBooks();
+    const newSortWish = sortWish.sort((a, b) => {
+      return b.yearOfPublishing - a.yearOfPublishing;
+    });
+    setBooks2(newSortWish);
+    const newSortRead = sortRead.sort((a, b) => {
+      return b.yearOfPublishing - a.yearOfPublishing;
+    });
+    setBooks(newSortRead);
+  };
   return (
     <div>
       <h2 className="text-[28px] font-bold text-center bg-[#f3f3f3] rounded-xl py-[34px] mt-8">
@@ -30,13 +66,13 @@ const ListedBooks = () => {
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li>
-              <a>Rating</a>
+              <a onClick={handleRatingSort}>Rating</a>
             </li>
             <li>
-              <a>Number of pages</a>
+              <a onClick={handlePagesSort}>Number of pages</a>
             </li>
             <li>
-              <a>Publisher year</a>
+              <a onClick={handleYearSort}>Publisher year</a>
             </li>
           </ul>
         </details>
