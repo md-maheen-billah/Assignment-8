@@ -27,7 +27,7 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                to="/"
+                to="/home"
                 className={({ isActive }) =>
                   isActive
                     ? " bg-[#23be0a] text-white px-2 py-1 rounded-md"
@@ -69,7 +69,7 @@ const Navbar = () => {
         <ul className=" menu-horizontal px-1">
           <li>
             <NavLink
-              to="/"
+              to="/home"
               className={({ isActive }) =>
                 isActive
                   ? "text-[#23be0a] border-2 border-[#23be0a] font-bold px-4 btn py-2 rounded-xl"

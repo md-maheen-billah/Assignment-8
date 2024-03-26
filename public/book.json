@@ -1,6 +1,6 @@
 [
   {
-    "bookId": 1,
+    "id": 1,
     "bookName": "The Giver",
     "author": "Lois Lowry",
     "image": "https://i.ibb.co/Rg7PMQ5/TheGiver.jpg",
@@ -13,7 +13,7 @@
     "yearOfPublishing": 1993
   },
   {
-    "bookId": 2,
+    "id": 2,
     "bookName": "City Of Bones",
     "author": "Cassandra Clare",
     "image": "https://i.ibb.co/BgYBjsZ/City-Of-Bones.jpg",
@@ -26,7 +26,7 @@
     "yearOfPublishing": 2007
   },
   {
-    "bookId": 3,
+    "id": 3,
     "bookName": "The Fault in Our Stars",
     "author": "John Green",
     "image": "https://i.ibb.co/n84GJ4K/TFIOS.jpg",
@@ -39,7 +39,7 @@
     "yearOfPublishing": 2012
   },
   {
-    "bookId": 4,
+    "id": 4,
     "bookName": "Divergent",
     "author": "Veronica Roth",
     "image": "https://i.ibb.co/jvQnwKq/Divergent.jpg",
@@ -52,7 +52,7 @@
     "yearOfPublishing": 2012
   },
   {
-    "bookId": 5,
+    "id": 5,
     "bookName": "Clockwork Angel",
     "author": "Cassandra Clare",
     "image": "https://i.ibb.co/HhvZ6gV/Clockwork-Angel.jpg",
@@ -65,7 +65,7 @@
     "yearOfPublishing": 2010
   },
   {
-    "bookId": 6,
+    "id": 6,
     "bookName": "Vampire Academy",
     "author": "Richelle Mead",
     "image": "https://i.ibb.co/Gtv2Hwg/VampAcad.jpg",
@@ -78,7 +78,7 @@
     "yearOfPublishing": 2007
   },
   {
-    "bookId": 7,
+    "id": 7,
     "bookName": "Artemis Fowl",
     "author": "Eoin Colfer",
     "image": "https://i.ibb.co/x7BPmvy/Artemis-Fowl.jpg",
@@ -91,7 +91,7 @@
     "yearOfPublishing": 2003
   },
   {
-    "bookId": 8,
+    "id": 8,
     "bookName": "Lord of the Flies",
     "author": "William Golding",
     "image": "https://i.ibb.co/Bcrd1z3/Lord-Flies.jpg",
@@ -104,7 +104,7 @@
     "yearOfPublishing": 1954
   },
   {
-    "bookId": 9,
+    "id": 9,
     "bookName": "Evermore",
     "author": "Alyson Noel",
     "image": "https://i.ibb.co/vmYV9Rv/EverMore.jpg",
