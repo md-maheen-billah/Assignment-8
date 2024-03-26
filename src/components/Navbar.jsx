@@ -63,7 +63,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl p-0">Book Vibe</a>
+        <a className="btn btn-ghost text-xl font-bold p-0">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className=" menu-horizontal px-1">
