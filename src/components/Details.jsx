@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBook, saveWishBook } from "../utility/idex";
 
 const Details = () => {
   const books = useLoaderData();
@@ -6,10 +7,10 @@ const Details = () => {
   const idInt = parseInt(id);
   const book = books.find((book) => book.id === idInt);
   const handleRead = (book) => {
-    console.log(book);
+    saveBook(book);
   };
   const handleWishList = (book) => {
-    console.log(book);
+    saveWishBook(book);
   };
   return (
     <div className="flex items-start gap-12 mt-12 mb-12">
