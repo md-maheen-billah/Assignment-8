@@ -22,17 +22,17 @@ const ReadWishCard = ({ book }) => {
             <a className="text-[#23BE0A] font-medium">#{book.tags[1]}</a>
             <a className="flex items-center space-x-2">
               <IoLocationOutline />
-              <p>Year of Publishing: {book.yearOfPublishing}</p>
+              <span>Year of Publishing: {book.yearOfPublishing}</span>
             </a>
           </p>
           <p className="flex space-x-6 mt-4">
             <a className="flex items-center space-x-2">
               <GoPeople />
-              <p>Publisher: {book.publisher}</p>
+              <span>Publisher: {book.publisher}</span>
             </a>
             <a className="flex items-center space-x-2">
               <LuFileSpreadsheet />
-              <p>Page {book.totalPages}</p>
+              <span>Page {book.totalPages}</span>
             </a>
           </p>
           <hr className="my-4" />
