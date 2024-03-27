@@ -5,7 +5,7 @@ A simple book related webpage created using react.
 Netlify- https://incomparable-taiyaki-a2cc21.netlify.app/
 
 # Features
-Inplemented the following:
+Implemented the following:
 -  Utilized Local Storage for data persistence
 -  Integrated React Router for client-side routing
 -  Employed Context API for state management
