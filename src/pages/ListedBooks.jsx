@@ -56,10 +56,10 @@ const ListedBooks = () => {
   };
   return (
     <div>
-      <h2 className="text-[28px] font-bold text-center bg-[#f3f3f3] rounded-xl py-[34px] mt-8">
+      <h2 className="text-[28px] font-bold text-center bg-[#f3f3f3] rounded-xl py-[34px] lg:mt-8 mt-4 mx-2 lg:mx-0">
         Books
       </h2>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center lg:mt-8 mt-4 mx-2 lg:mx-0">
         <details className="dropdown">
           <summary className="m-1 text-lg font-semibold text-white btn bg-[#23be0a] pr-6 pl-8">
             Sort By <RiArrowDropDownLine />
@@ -77,7 +77,7 @@ const ListedBooks = () => {
           </ul>
         </details>
       </div>
-      <div className="flex items-center overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap mt-[56px]">
+      <div className="flex items-center overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap mt-6 lg:mt-[56px]">
         <Link
           to=""
           onClick={() => setTabIndex(0)}

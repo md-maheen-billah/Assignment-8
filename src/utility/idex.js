@@ -38,10 +38,3 @@ export const saveWishBook = (book) => {
   localStorage.setItem("wishBooks", JSON.stringify(books));
   toast.success("Book set to Wishlist");
 };
-// delete
-export const deleteBook = (id) => {
-  let books = getBooks();
-  const remaining = books.filter((b) => b.id !== id);
-  localStorage.setItem("books", JSON.stringify(remaining));
-  toast.success("Book removed from Read");
-};

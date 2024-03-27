@@ -13,8 +13,8 @@ const Details = () => {
     saveWishBook(book);
   };
   return (
-    <div className="flex items-start gap-12 mt-12 mb-12">
-      <div className="w-[600px] h-[600px]">
+    <div className="flex flex-col lg:flex-row lg:items-start gap-12 mt-4 lg:mt-12 mb-4 lg:mb-12 mx-2 lg:mx-0">
+      <div className="lg:w-[600px] lg:h-[600px]">
         <img
           className="rounded-3xl w-[100%] h-[100%]"
           src={book.image}
@@ -39,7 +39,7 @@ const Details = () => {
           <a className="text-[#23BE0A] font-medium">#{book.tags[1]}</a>
         </p>
         <hr className="my-6" />
-        <div className="flex gap-16 leading-[38px]">
+        <div className="flex lg:gap-16 gap-2 leading-[38px]">
           <div className="text-[#424242]">
             <p>Number of Pages:</p>
             <p>Publisher:</p>
@@ -53,7 +53,7 @@ const Details = () => {
             <p>{book.rating}</p>
           </div>
         </div>
-        <div className="space-x-4 mt-7">
+        <div className="space-x-4 mt-7 flex justify-center lg:justify-start">
           <button
             onClick={() => handleRead(book)}
             className="btn border-2 text-lg font-semibold bg-white border-gray-300 px-5"

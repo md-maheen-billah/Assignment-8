@@ -68,7 +68,7 @@ const Chart = () => {
   }, []);
   return (
     <div
-      className="bg-[#f3f3f3] px-6 py-14 rounded-2xl mt-8"
+      className="bg-[#f3f3f3] px-6 py-14 rounded-2xl lg:mt-8 mt-4"
       style={{ width: "100%", height: 500 }}
     >
       <ResponsiveContainer>
@@ -79,8 +79,7 @@ const Chart = () => {
           margin={{
             top: 20,
             right: 30,
-            left: 20,
-            bottom: 5,
+            left: -10,
           }}
         >
           <CartesianGrid strokeDasharray="4 4" />

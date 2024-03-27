@@ -8,7 +8,7 @@ const Book = ({ book }) => {
       to={`/book/${book.id}`}
       className="transition hover:scale-105 hover:border-[#23BE0A] card bg-base-100 border-2"
     >
-      <figure className="px-5 pt-5 h-[500px] ">
+      <figure className="px-5 pt-5 lg:h-[500px] ">
         <img src={book.image} className="h-full w-full rounded-xl" />
       </figure>
       <div className="px-5 py-5 items-left text-left">

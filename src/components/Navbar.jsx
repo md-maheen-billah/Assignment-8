@@ -98,8 +98,8 @@ const Navbar = () => {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold px-4 btn py-2 rounded-xl"
-                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold px-4  py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2  rounded-xl bg-white shadow-none hover:bg-gray-300 hover:duration-200"
               }
             >
               Home
@@ -110,8 +110,8 @@ const Navbar = () => {
               to="/listed"
               className={({ isActive }) =>
                 isActive
-                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold btn px-4 py-2 rounded-xl"
-                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold  px-4 py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2  rounded-xl bg-white shadow-none hover:bg-gray-300 hover:duration-200"
               }
             >
               Listed Books
@@ -122,8 +122,8 @@ const Navbar = () => {
               to="/pages"
               className={({ isActive }) =>
                 isActive
-                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold btn px-4 py-2 rounded-xl"
-                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold  px-4 py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2  rounded-xl bg-white shadow-none hover:bg-gray-300 hover:duration-200"
               }
             >
               Pages to Read
@@ -134,8 +134,8 @@ const Navbar = () => {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold btn px-4 py-2 rounded-xl"
-                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold  px-4 py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2 rounded-xl bg-white shadow-none hover:bg-gray-300 hover:duration-200"
               }
             >
               About
@@ -146,8 +146,8 @@ const Navbar = () => {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold btn px-4 py-2 rounded-xl"
-                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold  px-4 py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2  rounded-xl bg-white shadow-none hover:bg-gray-300 hover:duration-200"
               }
             >
               Contact
@@ -156,8 +156,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-2">
-        <a className="btn text-white bg-[#23be0a]">Sign In</a>
-        <a className="btn text-white bg-[#59c6d2]">Sign Up</a>
+        <a className="lg:px-4  rounded-lg px-2 py-2 text-white bg-[#23be0a]">
+          Sign In
+        </a>
+        <a className="lg:px-4 rounded-lg px-2 py-2 text-white bg-[#59c6d2]">
+          Sign Up
+        </a>
       </div>
     </div>
   );
