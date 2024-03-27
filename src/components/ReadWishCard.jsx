@@ -16,7 +16,7 @@ const ReadWishCard = ({ book }) => {
           <p className="text-[#424242] text-xl font-medium mt-3">
             By : {book.author}
           </p>
-          <p className="flex flex-col lg:flex-row lg:space-x-8 space-y-2 mt-4">
+          <p className="flex flex-col lg:flex-row lg:space-x-8 space-y-2 lg:space-y-0 mt-4">
             <span className="font-bold leading-[26px]">Tag</span>
             <a className="text-[#23BE0A] font-medium">#{book.tags[0]}</a>
             <a className="text-[#23BE0A] font-medium">#{book.tags[1]}</a>

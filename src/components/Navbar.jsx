@@ -156,12 +156,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-2">
-        <a className="lg:px-4  rounded-lg px-2 py-2 text-white bg-[#23be0a]">
-          Sign In
-        </a>
-        <a className="lg:px-4 rounded-lg px-2 py-2 text-white bg-[#59c6d2]">
-          Sign Up
-        </a>
+        <button className="px-2 py-2 bg-[#23be0a] lg:px-4  rounded-lg hover:bg-gray-300 hover:duration-200">
+          <a className=" text-white">Sign In</a>
+        </button>
+        <button className="lg:px-4 rounded-lg px-2 py-2 bg-[#59c6d2] hover:bg-gray-300 hover:duration-200">
+          <a className=" text-white">Sign Up</a>
+        </button>
       </div>
     </div>
   );
