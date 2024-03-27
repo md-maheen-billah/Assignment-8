@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -27,7 +27,7 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                to="/home"
+                to="/"
                 className={({ isActive }) =>
                   isActive
                     ? " bg-[#23be0a] text-white px-2 py-1 rounded-md"
@@ -61,15 +61,41 @@ const Navbar = () => {
                 Pages to Read
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? " bg-[#23be0a] text-white px-2 py-1 rounded-md"
+                    : "px-2 py-1"
+                }
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? " bg-[#23be0a] text-white px-2 py-1 rounded-md"
+                    : "px-2 py-1"
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl font-bold p-0">Book Vibe</a>
+        <Link to="/" className="btn btn-ghost text-xl font-bold p-0">
+          Book Vibe
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className=" menu-horizontal px-1">
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className={({ isActive }) =>
                 isActive
                   ? "text-[#23be0a] border-2 border-[#23be0a] font-bold px-4 btn py-2 rounded-xl"
@@ -101,6 +127,30 @@ const Navbar = () => {
               }
             >
               Pages to Read
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold btn px-4 py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+              }
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[#23be0a] border-2 border-[#23be0a] font-bold btn px-4 py-2 rounded-xl"
+                  : "border-2 border-white px-4 py-2 btn rounded-xl bg-white shadow-none"
+              }
+            >
+              Contact
             </NavLink>
           </li>
         </ul>
