@@ -7,7 +7,7 @@ Netlify- https://incomparable-taiyaki-a2cc21.netlify.app/
 # Features
 Inplemented the following:
 -  Local Storage 
--  React Rounter 
+-  React Router 
 -  Context API
 -  Sort By
 -  Recharts
