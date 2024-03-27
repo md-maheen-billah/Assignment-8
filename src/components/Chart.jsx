@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PropTypes from "prop-types";
+
 import { getBooks } from "../utility/idex";
 import {
   BarChart,
