@@ -18,7 +18,7 @@ const About = () => {
             and interest. Thank you for visiting our site. Happy reading!
           </p>
           <Link to="/contact">
-            <button className="btn btn-primary border-[#23be0a] bg-[#23be0a] text-white mt-4">
+            <button className="btn font-semibold text-lg border-[#23be0a] bg-[#23be0a] text-white mt-4">
               Contact Us
             </button>
           </Link>
