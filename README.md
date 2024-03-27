@@ -6,10 +6,9 @@ Netlify- https://incomparable-taiyaki-a2cc21.netlify.app/
 
 # Features
 Inplemented the following:
--  Local Storage 
--  React Router 
--  Context API
--  Sort By
--  Recharts
--  Mobile Responsive
-
+-  Utilized Local Storage for data persistence
+-  Integrated React Router for client-side routing
+-  Employed Context API for state management
+-  Implemented "Sort By" functionality
+-  Utilized Recharts for data visualizatio
+-  Ensured mobile responsiveness for enhanced user experience
